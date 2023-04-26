@@ -1,8 +1,7 @@
 import { CodegenConfig } from "@graphql-codegen/cli";
 
-export const APOLLO_SERVER_URL = "https://swapi-graphql.eskerda.vercel.app/";
 const config: CodegenConfig = {
-  schema: "https://dev-541cf5be7e39601f.api.footium.club/api/graphql",
+  schema: "https://api.footium.club/beta/api/graphql",
   documents: ["src/**/*.tsx"],
   generates: {
     "./src/__generated__/": {
